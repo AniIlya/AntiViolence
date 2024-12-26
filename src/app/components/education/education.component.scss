@@ -1,0 +1,145 @@
+.cont1{
+    text-align: center;
+ 
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+     background-color: #F1F7F6;
+    background-size: cover;
+    color: #2f4f4f; /* Темно-зеленый текст */
+    // height: 100vh;
+
+  
+    .hero-content {
+     padding: 20px 50px;
+      width: 45%;
+  
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        line-height: 1.4;
+        color: #00856F;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        max-width: 600px;
+        margin-left: auto;
+        color: #263633;
+        margin-right: auto;
+        text-align: start;
+        span{
+         
+            font-weight: 600;
+        }
+      }
+  
+      .search-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+  
+        input {
+          padding: 10px;
+          width: 300px;
+          border-radius: 25px;
+          border: 1px solid #ccc;
+          margin-right: 10px;
+        }
+  
+       
+      }
+  
+      .buttons {
+        a { 
+            
+            background-color: #00856F;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            font-size: larger;
+            font-weight: 500;
+            line-height: 20px;
+            border-radius: 4px;
+          
+          display: inline-block;
+       
+          margin: 10px;
+    ;
+          text-decoration: none;
+      
+          font-size: 1rem;
+          transition: background-color 0.3s;
+  
+      
+        }
+      }
+    }
+    .hero-img{
+        width: 50%;
+        img{
+         width: 99%;   
+        }
+
+    }
+  
+}
+
+.container {
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Центрируем карточки */
+    gap: 40px; /* Добавляем отступы между карточками */
+    max-width: 1200px; /* Ограничиваем ширину контейнера */
+}
+
+.card {
+    width: 280px; /* Немного уменьшаем размер карточек для аккуратности */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Добавляем тень для глубины */
+    border-radius: 8px; /* Закругляем углы */
+    overflow: hidden; /* Обрезаем всё, что выходит за границы */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Лёгкий подъем при наведении */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Усиленная тень при наведении */
+}
+
+.card img {
+    height: 300px; /* Задаём фиксированную высоту изображений */
+    object-fit: cover; /* Обрезаем изображения, чтобы они не деформировались */
+    width: 100%;
+}
+
+.card-body {
+    padding: 15px; /* Добавляем внутренние отступы */
+    text-align: center; /* Центрируем текст */
+}
+
+
+.eduBut {
+    background-color:  #005a47;
+    border: none;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.moreBut {
+    width: 80px;
+    height: 30px;
+    margin-bottom: 40px;
+    margin-left: 630px;
+    background-color:  #005a47;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

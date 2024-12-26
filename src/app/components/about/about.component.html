@@ -1,0 +1,86 @@
+<section class="cont">
+  <div class="about-info">
+    <p class="title">Dastgir — это платформа, которая поможет каждому</p>
+    <p> Платформа направленна на создание безопасного и поддерживающего пространства для людей, пострадавших от гендерного насилия.
+      Мы — команда Dastgir, объединённая общей целью помочь жертвам гендерного насилия. Наша миссия — создать безопасное пространство, где каждый пострадавший сможет получить поддержку, защиту и необходимые ресурсы для восстановления. Мы верим, что каждый человек заслуживает безопасности и уважения. Если вы столкнулись с насилием — мы здесь, чтобы помочь.
+    </p>
+  </div>
+</section>
+<div class="info">
+  <div class="about-info2">
+    <p class="about">Доверьтесь нам</p>
+    <p></p>
+  </div>
+
+  <div class="circle-container">
+    <div class="circle">Конфиденциальность — все обращения строго анонимны и защищены.</div>
+    <div class="circle">Прозрачность — мы открыто рассказываем о своей работе и регулярно публикуем отчёты о нашей деятельности.</div>
+    <div class="circle">Профессионализм — наши специалисты имеют большой опыт работы в сфере защиты прав человека и кризисной поддержки.</div>
+  </div>
+</div>
+ 
+
+
+<div class="container mt-5">
+  <div class="faq-header">Часто задаваемые вопросы</div>
+
+  <div class="faq-content">
+    <div class="faq-question">
+      <input id="q1" type="checkbox" class="panel">
+      <label for="q1" class="panel-title">
+        <span class="plus">+</span>Что такое Dastgir?
+      </label>
+      <div class="panel-content">Dastgir — это онлайн-платформа, созданная для помощи жертвам гендерного насилия. Мы предоставляем ресурсы, консультации и возможность сбора средств для поддержки пострадавших.</div>
+    </div>
+
+    <div class="faq-question">
+      <input id="q2" type="checkbox" class="panel">
+      <label for="q2" class="panel-title">
+        <span class="plus">+</span>Как можно обратиться за помощью?
+      </label>
+      <div class="panel-content">Вы можете оставить заявку на нашем сайте, позвонить на горячую линию или связаться с нами через социальные сети. Мы гарантируем конфиденциальность.</div>
+    </div>
+
+    <div class="faq-question">
+      <input id="q3" type="checkbox" class="panel">
+      <label for="q3" class="panel-title">
+        <span class="plus">+</span>Какие услуги предоставляются бесплатно?
+      </label>
+      <div class="panel-content">Все консультации, юридическая помощь и временные убежища предоставляются бесплатно для жертв насилия.</div>
+    </div>
+
+    <div class="faq-question">
+      <input id="q4" type="checkbox" class="panel">
+      <label for="q4" class="panel-title">
+        <span class="plus">+</span>Как я могу сообщить о случае насилия?
+      </label>
+      <div class="panel-content">Вы можете заполнить форму на сайте или позвонить на горячую линию, и мы немедленно примем меры для вашей безопасности.</div>
+    </div>
+
+    <div class="faq-question">
+      <input id="q5" type="checkbox" class="panel">
+      <label for="q5" class="panel-title">
+        <span class="plus">+</span>Как я могу поддержать работу Dastgir?
+      </label>
+      <div class="panel-content">Вы можете поддержать нас, пожертвовав средства, став волонтером или распространяя информацию о нашей платформе.</div>
+    </div>
+  </div>
+</div>
+
+
+<h2>Свяжитесь с нами</h2>
+<form [formGroup]="contactForm" class="contact-form">
+  <div class="form-group">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">Мы никода не распростроним вашу почту</small>
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleInputPassword1" class="form-label">Пароль</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+
+  <button (click)="login()" type="submit" class="btn btn-submit">Отправить</button>
+</form>
+

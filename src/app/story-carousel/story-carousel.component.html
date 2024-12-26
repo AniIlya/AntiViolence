@@ -1,0 +1,30 @@
+<div class="carousel-container">
+
+
+  <div class="carousel-item">
+    <div class="carousel-text">
+      <h2>{{ stories[currentIndex].title }}</h2>
+      <p>{{ stories[currentIndex].description }}</p>
+
+<<<<<<< HEAD
+      <button [routerLink]="'/'+stories[currentIndex].link">Подробнее</button>
+=======
+      <button>Подробнее</button>
+>>>>>>> 1ab47832ad7d184866f5c2cd731c4ee4a9758971
+    </div>
+    <div class="img">
+     
+
+      <img  [src]="stories[currentIndex].video"  alt="">
+    </div>
+  </div>
+
+  <div class="carousel-buttons">
+    <button mat-icon-button (click)="prevStory()">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+    <button mat-icon-button (click)="nextStory()">
+      <mat-icon>chevron_right</mat-icon>
+    </button>
+  </div>
+</div>

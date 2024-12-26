@@ -1,0 +1,25 @@
+
+
+<div class="game-container" *ngIf="!showResultsFlag">
+    <h1>Проверим насколько хорошо ты знаешь о своих границах</h1>
+    <div class="question-card">
+      <h2 class="question-title">{{ questions[currentQuestionIndex].text }}</h2>
+    </div>
+  
+    <div class="options">
+      <div *ngFor="let option of questions[currentQuestionIndex].options; let i = index" class="option-card">
+        <button 
+          (click)="answerQuestion(i)" 
+          class="option-button">
+          {{ option }}
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div *ngIf="showResultsFlag" class="result-card">
+    <p>Ваш бал: <strong>{{ score }} из {{ questions.length }}</strong></p>
+    <p>{{ feedback }}</p>
+    <button (click)="resetGame()" class="restart-button">Заново пройти</button>
+  </div>
+  

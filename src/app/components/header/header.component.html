@@ -1,0 +1,52 @@
+<header class="navbar">
+    <nav>
+      <a routerLink="/home"><img src="../../../assets/Logo.svg" alt=""></a>
+      <ul>
+       
+        <li class="dropdown" (click)="toggleMenu('help')">
+          <a>Помощь ▼</a>
+          <ul class="dropdown-content" [class.open]="activeMenu === 'help'">
+<<<<<<< HEAD
+
+
+            <li><a routerLink="/chatbot">Нейро-психолог</a></li>
+
+            <li><a routerLink="/hotLines">Горячие линии</a></li>
+            <li><a routerLink="/help/psychologist">Советы психолога</a></li>
+
+=======
+<<<<<<< HEAD
+            <li><a routerLink="/help/hotlines">Горячие линии</a></li>
+            <li><a routerLink="/chatbot">Нейро-психолог</a></li>
+=======
+            <li><a routerLink="/hotLines">Горячие линии</a></li>
+            <li><a routerLink="/help/psychologist">Советы психолога</a></li>
+>>>>>>> 24ce7327bd5daf2ef51bf1c521a3b3b8c7b09c25
+>>>>>>> 1ab47832ad7d184866f5c2cd731c4ee4a9758971
+          </ul>
+        </li>
+  
+        <!-- Новости -->
+        <li class="dropdown" (click)="toggleMenu('news')">
+          <a>Новости ▼</a>
+          <ul class="dropdown-content" [class.open]="activeMenu === 'news'">
+<<<<<<< HEAD
+            <li><a routerLink="/statistics">Статистика</a></li>
+=======
+            <li><a routerLink="/news/statistics">Статистика</a></li>
+>>>>>>> 1ab47832ad7d184866f5c2cd731c4ee4a9758971
+            <li><a routerLink="/news/victim-stories">История жертв</a></li>
+            <li><a routerLink="/news/victim-stories">Анонимный дневник</a></li>
+          </ul>
+        </li>
+
+        
+  
+        <li><a routerLink="/education">Образование</a></li>
+        <li><a routerLink="/about">О нас</a></li>
+      </ul>
+
+      <button>Пожертвовать</button>
+    </nav>
+  </header>
+  
